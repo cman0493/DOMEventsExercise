@@ -27,3 +27,13 @@ darkMode.addEventListener('click', () => {
 });
 
 //5
+const reality = document.querySelector(`#reality`);
+let clickCount = 0;
+reality.addEventListener(`click`, () => {
+  clickCount++;
+  if (clickCount < 3){
+    alert("You have successfully moved to another reality");
+  } else if (clickCount === 3){
+    alert("OH NO! You can only move to a new another reality a couple times. You are stuck in this reality!");
+  }
+});
